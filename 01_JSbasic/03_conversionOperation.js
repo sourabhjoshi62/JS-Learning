@@ -1,13 +1,13 @@
 let score ="33abc"
 let valueNum = Number(score)
-console.log(typeof valueNum)
-console.log(valueNum)
+// console.log(typeof valueNum)
+// console.log(valueNum)
 
 
 let age = null
 let value = Number(age)
-console.log(typeof value)
-console.log(value)
+// console.log(typeof value)
+// console.log(value)
 
 
 /*
@@ -21,6 +21,14 @@ null=0
 
 let boolval=0
 let convert=Boolean(boolval)
-console.log(typeof convert)
-console.log(convert)
+// console.log(typeof convert)
+// console.log(convert)
 
+
+//............Operations................
+
+console.log("1"+2)
+console.log("1"+"2")
+console.log(1+"2")
+console.log("1"+2+2)
+console.log(1+1+1+"2")//how??......ecmascript documentation
