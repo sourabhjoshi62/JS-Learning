@@ -36,3 +36,9 @@ function message(username){
 console.log(message())
 
 
+function calculateCartPrice(...num){
+    return num
+}
+console.log(calculateCartPrice(200,300,400,500))
+
+
