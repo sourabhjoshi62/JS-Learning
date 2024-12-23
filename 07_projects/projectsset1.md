@@ -28,6 +28,7 @@ buttons.forEach(function(button) {
     }
   });
 });
+```
 
 
 # Project 2 - BMI Calculator Project
