@@ -66,3 +66,26 @@ form.addEventListener('submit', function(e) {
     results.innerHTML = `<span>BMI: ${bmi}</span>`;
   }
 });
+
+```
+
+# Project 3 - Live Clock Project
+
+This project displays a live clock on a webpage that updates every second using JavaScript. The time is displayed in the local format and updates dynamically.
+
+## How It Works
+
+The clock is built using JavaScript's `setInterval()` method, which updates the displayed time every second. The time is retrieved using JavaScript's `Date()` object and displayed in the browser using the `toLocaleTimeString()` method.
+
+## Code
+
+```javascript
+const clock = document.querySelector('#clock');
+
+setInterval(function(){
+  let date = new Date();  // Get the current date and time
+  clock.innerHTML = date.toLocaleTimeString();  // Display the time in local format
+}, 1000);  // Update every second
+
+```
+
