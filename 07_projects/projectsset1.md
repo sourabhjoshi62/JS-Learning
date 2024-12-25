@@ -89,3 +89,43 @@ setInterval(function(){
 
 ```
 
+
+
+# Project 4 - Unlimited Colors
+
+## How it works
+This project uses JavaScript to control the background color changes at regular intervals (every second) when the "Start" button is clicked and stops the changes when the "Stop" button is clicked.
+
+## Code
+
+```javascript
+
+const randomcolor = function() {
+const hex = '012356789ABCDEF';
+let color='#';
+  for(let i=0;i<6;i++){
+     color += hex[Math.floor(Math.random()*16)];
+  }
+  return color;
+};
+let intervalId;
+const startchangingcolor=function(){
+  if(!intervalId){
+  intervalId=setInterval(startcolor,500);
+  }
+  function startcolor(){
+    document.body.style.backgroundColor=randomcolor()
+    }
+};
+
+const stopcolor=function(){
+  clearInterval(intervalId);
+  intervalId = null;
+}
+
+
+document.querySelector('#start').addEventListener('click',startchangingcolor);
+
+document.querySelector('#stop').addEventListener('click',stopcolor)
+```
+
